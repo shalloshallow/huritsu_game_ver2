@@ -54,30 +54,34 @@ function useArchiveIfExists(name)
 }
 
 Storages.addAutoPath(System.exePath + "video/"); // exePath 以下の video/
-Storages.addAutoPath("video/"); // video フォルダ
-Storages.addAutoPath("others/"); // その他
-Storages.addAutoPath("rule/"); // ルール画像フォルダ
-Storages.addAutoPath("sound/"); // 効果音フォルダ
-Storages.addAutoPath("bgm/"); // BGM フォルダ
-Storages.addAutoPath("fgimage/"); // 前景画像フォルダ
-Storages.addAutoPath("bgimage/"); // 背景画像フォルダ
-Storages.addAutoPath("scenario/"); // シナリオフォルダ
-Storages.addAutoPath("image/"); // そのほかの画像フォルダ
+Storages.addAutoPath("bgm/");
+Storages.addAutoPath("img/"); 
+Storages.addAutoPath("img_bg/"); 
+Storages.addAutoPath("img_ch/"); 
+Storages.addAutoPath("img_rule/"); 
+Storages.addAutoPath("img_system/"); 
+Storages.addAutoPath("ks_macro/"); 
+Storages.addAutoPath("ks_map/"); 
+Storages.addAutoPath("ks_scenario/"); 
+Storages.addAutoPath("othes/"); 
+Storages.addAutoPath("sound/"); 
 Storages.addAutoPath("system/"); // システムフォルダ
 
 // パッチアーカイブの検索と使用
 // もしこれらの名前を持ったアーカイブが実行可能ファイルと
 // 同じ場所にあった場合、それを優先して使う
-useArchiveIfExists("video.xp3");
-useArchiveIfExists("others.xp3");
-useArchiveIfExists("rule.xp3");
-useArchiveIfExists("sound.xp3");
 useArchiveIfExists("bgm.xp3");
-useArchiveIfExists("fgimage.xp3");
-useArchiveIfExists("bgimage.xp3");
-useArchiveIfExists("scenario.xp3");
-useArchiveIfExists("image.xp3");
-useArchiveIfExists("system.xp3");
+useArchiveIfExists("img.xp3"); 
+useArchiveIfExists("img_bg.xp3"); 
+useArchiveIfExists("img_ch.xp3"); 
+useArchiveIfExists("img_rule.xp3"); 
+useArchiveIfExists("img_system.xp3"); 
+useArchiveIfExists("ks_macro.xp3"); 
+useArchiveIfExists("ks_map.xp3"); 
+useArchiveIfExists("ks_scenario.xp3"); 
+useArchiveIfExists("othes.xp3"); 
+useArchiveIfExists("sound.xp3"); 
+useArchiveIfExists("system.xp3"); // システムフォルダ
 
 useArchiveIfExists("patch.xp3");
 
