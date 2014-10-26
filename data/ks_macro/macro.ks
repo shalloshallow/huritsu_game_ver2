@@ -53,13 +53,13 @@
 
 ;------------------------------------------------------------◆メッセージレイヤ
 
-[macro name="setNormalMessageLayer"]
+[macro name="_setNormalMessageLayer"]
 	[current layer="message0"]
 	[position layer="message0" frame="frame_1_610x150" top="320" left="16" marginl="70" margint="25" marginr="60"]
 	[deffont color="0x000000" shadow="false" size="22" ]
 [endmacro]
 
-[macro name="pm"]
+[macro name="_pm"]
 	[p][cm]
 [endmacro]
 
@@ -82,6 +82,10 @@
 
 [macro name="し"]
 	しゃろ[indent]
+[endmacro]
+
+[macro name="ソ"]
+	ソラ[indent]
 [endmacro]
 
 [return]

@@ -23,22 +23,13 @@
 *start|スタート
 [layopt index="1010000" layer="9"]
 
-[setNormalMessageLayer]
-[layopt layer=message visible=true]]
+[_setNormalMessageLayer]
+[layopt layer=message visible=true]
+
 [cm]
 [startanchor enabled="true"]
 
-[link target="*normal"]短い方[endlink][r]
-[link target="*mod"]長い方[endlink][s]
-
-*normal
 [call storage="0_0_op.ks"]
-[call storage="1_0.ks"]
-[jump target="*start"]
-
-*mod
-[call storage="0_0_op_mod.ks"]
-[call storage="1_0_mod.ks"]
 [jump target="*start"]
 
 
